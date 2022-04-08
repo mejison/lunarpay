@@ -1,0 +1,6 @@
+---
+  - name: Log into the container registry on local execution
+    changed_when: true
+    shell:
+      cmd: echo {{ DOCKER_PASS }} | docker login {{ DOCKER_REGISTRY }} -u {{ DOCKER_USER }} --password-stdin 
+  

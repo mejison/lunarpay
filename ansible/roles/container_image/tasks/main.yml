@@ -1,0 +1,10 @@
+---
+  - import_tasks: build.yml
+    connection: local
+    tags:
+      - build
+  - import_tasks: push.yml
+    connection: local
+    tags:
+      - push
+  

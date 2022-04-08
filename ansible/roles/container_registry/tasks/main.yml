@@ -1,0 +1,6 @@
+---
+  - import_tasks: login.yml
+    connection: local
+    tags:
+      - registry-login
+  

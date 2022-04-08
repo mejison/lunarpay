@@ -1,0 +1,8 @@
+---
+  - name: Build the container image on local execution
+    changed_when: true
+    command:
+      cmd: "node deploy/docker_build.js"
+      chdir: "../.."
+    environment:
+      DOCKER_REGISTRY_PATH: "{{ DOCKER_REGISTRY_PATH }}"

@@ -1,0 +1,9 @@
+#Looking for invoices to set them as Due if they need to
+#Name       : Set invoices as Due
+#Recurrence : Every day at 01:10
+#Description: Trigger script to look for invoices that need to be set as Due
+#Using Curl instead Cli because of logs are not working when Cli, for now will work okay with Curl
+#Author     : Juan Gomez
+10 1 * * * curl --silent https://app.lunarpay.com/cron/invoices/set_due
+10 1 * * * curl --silent https://devapp.lunarpay.com/cron/invoices/set_due
+

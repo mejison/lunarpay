@@ -1,0 +1,7 @@
+---
+  - hosts: "{{ target }}"
+    connection: local
+    gather_facts: false
+    roles:
+     - role: container_registry
+     - role: container_image
